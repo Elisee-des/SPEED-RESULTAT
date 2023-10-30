@@ -26,3 +26,13 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+/* Pour ouvrir le bouton hamburger quand l'ecran est reduit */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
