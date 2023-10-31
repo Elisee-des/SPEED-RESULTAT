@@ -271,20 +271,23 @@ html {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
-  background: var(--aa-light-gray);
+  border: 1px solid var(--aa-primary);
+  background-color: var(--aa-white);
   border-radius: 5px;
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
   background-color: var(--aa-light-gray);
   outline: none;
+  border: 1px solid var(--aa-primary);
 }
 
 hr {
@@ -432,7 +435,6 @@ a {
   margin-left: 0px;
 }
 
-/*Debut footer*/
 .footer {
   /* position: fixed; */
   top: 0;
@@ -449,14 +451,13 @@ a {
 .footer p {
   padding-top: 20px;
 }
-/*Fin footer*/
 
 /*Partie Privé/Partie d'administratiion*/
-/*Sidebar*/
+
 .sidebar {
   margin-top: 69px;
   padding: 0;
-  width: 230px;
+  width: 220px;
   background-color: var(--aa-primary);
   position: fixed;
   height: 100%;
@@ -477,8 +478,8 @@ a {
   /* color: var(--aa-white); */
   padding: 16px;
   text-decoration: none;
-  background-color: var(--aa-primary);
-  border: none;
+  background-color: #008069;
+
   outline: none;
 }
 
@@ -504,11 +505,11 @@ a {
   border: 1px solid var(--aa-white);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 div.content {
-  margin-left: 230px;
+  margin-left: 220px;
   padding: 79px 16px;
   height: 100%;
   margin-bottom: 0px;
@@ -544,43 +545,53 @@ div.content {
   margin-top: 30px;
 }
 
-/*Fin Sidebar*/
+/*Page contact d'administrateur*/
 
-/*Partie contact d'un administration*/
+.input-contact {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid var(--aa-primary);
+  background: var(--aa-white);
+  border-radius: 5px;
+}
+.cnt {
+  display: flex;
+  justify-content: center;
+}
+.submit-contact {
+  background-color: var(--aa-primary);
+  color: var(--aa-white);
+  width: 200px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
-input[type="text"],
-input[type="email"],
-select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
+  resize: none;
 }
 
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  margin-top: 10px;
-  width: 200px;
-  border-radius: 4px;
-  cursor: pointer;
+.container-content {
+  height: 100%;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+.container-formulaire-contact {
+  height: 97%;
+  margin: auto;
+  width: 70%;
+  border: 1px solid var(--aa-primary);
   padding: 20px;
+  border-radius: 15px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
-
-/*FIN Partie contact d'un administration*/
