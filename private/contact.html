@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"
+    />
+    <link
+      href="../assets/fontawesome-free-6.4.2-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/fontawesome-free-6.4.2-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/fontawesome-free-6.4.2-web/css/solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/bootstrap/css/bootstrap.min.css"
+    />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="logo">SPEED-RESULTAT</a>
+      <div class="header-right">
+        <div>
+          <a class="" href="../index.html">Accueil</a>
+          <a class="active" href="connexion.html">Déconnexion</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="img-hamg" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="sidebar">
+      <a class="active" href="index.html">Tableau de bord</a>
+      <a href="proclamations.html">Proclamations</a>
+      <a href="deliberation.html">Delibérations</a>
+      <a href="#" class="dropdown-btn">
+        Gestions
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-container">
+        <a href="#">Gestion Résultats</a>
+        <a href="#">Gestion Proclamation</a>
+        <a href="#">Gestion Délibération</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="profil.html">Profil</a>
+    </div>
+
+    <div class="content">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">Message</li>
+        </ol>
+      </nav>
+
+      <div class="container-content">
+        <h2 class="title-header">Contact l'administrateur</h2>
+        <div class="container">
+          <form action="#">
+            <label for="fname">Nom et Prénom</label>
+            <input
+              type="text"
+              id="fname"
+              name="nom_prenom"
+              placeholder="Veuillez entrer votre nom et prénom"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Veuillez entrer votre email"
+            />
+
+            <label for="sujet">Sujet</label>
+            <input
+              type="text"
+              id="sujet"
+              name="sujet"
+              placeholder="Veuillez entrer le sujet de votre message"
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Veuillez entrez ici votre message"
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Envoyez" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

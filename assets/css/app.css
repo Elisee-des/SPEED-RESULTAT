@@ -36,7 +36,9 @@ html {
   justify-content: space-between;
   top: 0;
   width: 100%;
-  box-shadow: 0px 0px 2px 3px var(--aa-black);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  /* position: relative; */
+  z-index: 3;
 }
 
 .header a {
@@ -430,6 +432,7 @@ a {
   margin-left: 0px;
 }
 
+/*Debut footer*/
 .footer {
   /* position: fixed; */
   top: 0;
@@ -446,3 +449,138 @@ a {
 .footer p {
   padding-top: 20px;
 }
+/*Fin footer*/
+
+/*Partie Privé/Partie d'administratiion*/
+/*Sidebar*/
+.sidebar {
+  margin-top: 69px;
+  padding: 0;
+  width: 230px;
+  background-color: var(--aa-primary);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--aa-white);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.dropdown-btn {
+  display: block;
+  /* color: var(--aa-white); */
+  padding: 16px;
+  text-decoration: none;
+  background-color: var(--aa-primary);
+  border: none;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+  /* background-color: #262626; */
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Activation du lien courant*/
+.sidebar a.active {
+  border: 1px solid var(--aa-white);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  transition: 0.5s;
+  border: 1px solid var(--aa-white);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 18px;
+}
+
+div.content {
+  margin-left: 230px;
+  padding: 79px 16px;
+  height: 100%;
+  margin-bottom: 0px;
+  background-color: var(--aa-light-gray);
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.title-header {
+  margin-top: 10px;
+}
+
+.accordon-container {
+  margin-top: 30px;
+}
+
+/*Fin Sidebar*/
+
+/*Partie contact d'un administration*/
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*FIN Partie contact d'un administration*/
