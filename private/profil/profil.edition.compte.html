@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"
+    />
+    <link
+      href="../../assets/fontawesome-free-6.4.2-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/fontawesome-free-6.4.2-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/fontawesome-free-6.4.2-web/css/solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/bootstrap/css/bootstrap.min.css"
+    />
+
+    <title>Mise à jour du profil</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="logo">SPEED-RESULTAT</a>
+      <div class="header-right">
+        <div>
+          <a class="" href="../../index.html">Accueil</a>
+          <a
+            class="active"
+            onclick="return confirm('Etes vous sûr?')"
+            href="../../index.html"
+            >Déconnexion</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <a href="../index.html"
+        ><i class="fa-solid fa-gauge" style="color: #feffff"></i> Tableau de
+        bord</a
+      >
+      <a href="../proclamations.html"
+        ><i class="fa-solid fa-list" style="color: #feffff"></i>
+        Proclamations</a
+      >
+      <a href="../deliberation.html">
+        <i class="fa-solid fa-list-check" style="color: #feffff"></i>
+        Delibérations</a
+      >
+      <a href="#" class="dropdown-btn"
+        ><i class="fa-solid fa-bars-progress" style="color: #feffff"></i>
+        Gestions
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-container">
+        <a href="#"
+          ><i class="fa-solid fa-right-long" style="color: #feffff"></i> Gestion
+          Résultats</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-right-long" style="color: #feffff"></i> Gestion
+          Proclamation</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-right-long" style="color: #feffff"></i> Gestion
+          Délibération</a
+        >
+      </div>
+      <a href="../contact.html"
+        ><i class="fa-solid fa-message" style="color: #feffff"></i> Contact</a
+      >
+      <a href="../profil.html"
+        ><i
+          class="fa-sharp fa-solid fa-address-card"
+          style="color: #feffff"
+        ></i>
+        Profil</a
+      >
+    </div>
+
+    <div class="content">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="profil.edition.compte.html">Profil</a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">Edition</li>
+        </ol>
+      </nav>
+
+      <div class="container-content">
+        <h2
+          class="title-header"
+          style="text-align: center;, margin-bottom:10px;"
+        >
+          Mettez à jour votre compte
+        </h2>
+        <div class="container-formulaire-profil">
+          <form action="../profil.html">
+            <div class="content-edit-profil">
+              <div class="container-edit-profil">
+                <label for="fname">Nom</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="nom"
+                  value="Ouedraogo"
+                  class="input-profil-edit"
+                  placeholder="Veuillez entrer votre nom"
+                />
+              </div>
+
+              <div class="container-edit-profil">
+                <label for="fname">Prenom</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="prenom"
+                  class="input-profil-edit"
+                  value="Albert"
+                  placeholder="Veuillez entrer votre prénom"
+                />
+              </div>
+            </div>
+
+            <div class="content-edit-profil">
+              <div class="container-edit-profil">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="adgalbert@gmail.com"
+                  class="input-profil-edit"
+                  placeholder="Veuillez entrer votre email"
+                />
+              </div>
+
+              <div class="container-edit-profil">
+                <label for="sujet">INE</label>
+                <input
+                  type="text"
+                  id="sujet"
+                  name="ine"
+                  value="N00290320211"
+                  class="input-profil-edit"
+                  placeholder="Veuillez entrer votre ine"
+                />
+              </div>
+            </div>
+
+            <div class="content-edit-profil">
+              <div class="container-edit-profil">
+                <label for="sujet">Niveau etude</label>
+                <input
+                  type="text"
+                  id="sujet"
+                  name="niveau_etude"
+                  class="input-profil-edit"
+                  value="Licence 2"
+                  placeholder="Veuillez entrer votre niveau d'etude"
+                />
+              </div>
+
+              <div class="container-edit-profil">
+                <label for="sujet">Promotion</label>
+                <input
+                  type="text"
+                  id="sujet"
+                  name="promotion"
+                  value="2020"
+                  class="input-profil-edit"
+                  placeholder="Veuillez entrer votre promotion"
+                />
+              </div>
+            </div>
+
+            <div class="cnt-profil">
+              <button type="submit" style="gap: 3" class="submit-profil">
+                <i class="fa-regular fa-floppy-disk" style="color: #feffff"></i>
+                Enregistrer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

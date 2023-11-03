@@ -33,29 +33,58 @@
       <div class="header-right">
         <div>
           <a class="" href="../index.html">Accueil</a>
-          <a class="active" href="connexion.html">Déconnexion</a>
+          <a
+            class="active"
+            onclick="return confirm('Etes vous sûr?')"
+            href="../index.html"
+            >Déconnexion</a
+          >
         </div>
       </div>
-      <a href="javascript:void(0);" class="img-hamg" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
 
     <div class="sidebar">
-      <a class="active" href="index.html">Tableau de bord</a>
-      <a href="proclamations.html">Proclamations</a>
-      <a href="deliberation.html">Delibérations</a>
-      <a href="#" class="dropdown-btn">
+      <a href="index.html"
+        ><i class="fa-solid fa-gauge" style="color: #feffff"></i> Tableau de
+        bord</a
+      >
+      <a href="proclamations.html"
+        ><i class="fa-solid fa-list" style="color: #feffff"></i>
+        Proclamations</a
+      >
+      <a href="deliberation.html">
+        <i class="fa-solid fa-list-check" style="color: #feffff"></i>
+        Delibérations</a
+      >
+      <a href="#" class="dropdown-btn"
+        ><i class="fa-solid fa-bars-progress" style="color: #feffff"></i>
         Gestions
         <i class="fa fa-caret-down"></i>
       </a>
       <div class="dropdown-container">
-        <a href="#">Gestion Résultats</a>
-        <a href="#">Gestion Proclamation</a>
-        <a href="#">Gestion Délibération</a>
+        <a href="#"
+          ><i class="fa-solid fa-right-long" style="color: #feffff"></i> Gestion
+          Résultats</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-right-long" style="color: #feffff"></i> Gestion
+          Proclamation</a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-right-long" style="color: #feffff"></i> Gestion
+          Délibération</a
+        >
       </div>
-      <a href="contact.html">Contact</a>
-      <a href="profil.html">Profil</a>
+      <a href="contact.html"
+        ><i class="fa-solid fa-message" style="color: #feffff"></i> Contact</a
+      >
+      <a href="profil.html"
+        ><i
+          class="fa-sharp fa-solid fa-address-card"
+          style="color: #feffff"
+        ></i>
+        Profil</a
+      >
     </div>
 
     <div class="content">
@@ -997,7 +1026,7 @@
       </div>
     </div>
 
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
     <script src="../assets/js/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
