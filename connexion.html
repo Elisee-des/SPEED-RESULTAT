@@ -4,31 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css?family=ABeeZee"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="/assets/fontawesome-free-6.4.2-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/fontawesome-free-6.4.2-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/fontawesome-free-6.4.2-web/css/solid.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/app.css" />
-    <title>SPEED-RESULTAT-Connexion</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <title>SPEED-RESULTAT</title>
   </head>
   <body>
     <div class="header">
       <a href="index.html" class="logo">SPEED-RESULTAT</a>
       <div class="header-right">
         <div>
-          <a href="index.html" class="accueil">Accueil</a>
-          <div class="sous-accueil">
-            <a href="">Accueil 1</a>
-            <a href="">Accueil 2</a>
-            <a href="">Accueil 3</a>
-          </div>
+          <a href="index.html">Accueil</a>
           <a href="#about">A propos</a>
           <a href="contact.html">Contact</a>
           <a href="inscription.html">Inscription</a>
           <a class="active" href="connexion.html">Connexion</a>
         </div>
       </div>
-      <div class="img-hamg">
-        <img src="assets/icons/hamburg.png" class="detail" alt="" />
+      <a href="javascript:void(0);" class="img-hamg" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="navbar-submenu">
+      <div id="myLinks">
+        <a href="index.html">Accueil</a>
+        <a href="#about">A propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="inscription.html">Inscription</a>
+        <a class="active" href="connexion.html">Connexion</a>
       </div>
     </div>
 
@@ -72,6 +98,10 @@
           </div>
         </form>
       </div>
+    </div>
+
+    <div class="footer">
+      <p>@ Copyright 2023</p>
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
